@@ -20,6 +20,7 @@ steps:
     sscCiToken: '$(ScanCentral.SscCiToken)'
     uploadToSSC: true
     applicationIdentifierType: 'byId'
+    applicationVersionId: '10018'
     buildFailureCriteria: '[fortify priority order]:critical'
-    timeoutForPollingArtifactState: 30
     autoDetectBuildTool: true
+
