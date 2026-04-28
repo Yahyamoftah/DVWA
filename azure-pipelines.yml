@@ -24,3 +24,8 @@ steps:
     buildFailureCriteria: '[fortify priority order]:critical'
     autoDetectBuildTool: true
 
+- task: FortifyScanCentralDAST@7
+  inputs:
+    scanCentralDastApiUrl: 'https://192.168.40.130:64814/api/v2'
+    scanCentralCiCdToken: 'c3bd168d-551a-4c4a-8169-a125280d7ce3'
+    sscCiToken: '$(ScanCentral.SscCiToken)'
